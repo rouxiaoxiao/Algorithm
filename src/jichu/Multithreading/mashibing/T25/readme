@@ -1,0 +1,25 @@
+总结：
+1.对于使用map/set的选择使用
+HashMap
+TreeMap
+LinkedHashMap
+
+Hashtable:并发量小
+Collections.synchronizeXXX：并发量小
+
+ConcurrentHashMap：高并发
+ConcurrentSkipListMap：高并发，且需要排序
+
+2.队列
+ArrayList：不需要同步
+LinkedList：不需要同步
+Collections.synchronizedXXX或者Vector：并发量低
+CopyOnWriteList：多读少写的时候
+Queue:并发量高
+    ConcurrentLinkedQueue：高并发情况下的队列  (没有ConcurrentArrayQueue)
+    BlockingQueue：阻塞式
+        LinkedBQ：无界队列
+        ArrayBQ：有界队列
+        TransferQueue：直接交给消费者，无则阻塞
+        SynchronusQueue：容量为0的队列
+    DelayQueue：执行定时任务

@@ -1,0 +1,16 @@
+6种线程池：
+FixedThreadPool:
+CachedThreadPool:
+SingleThreadExecutor:
+ScheduledThreadPool:
+WorkStealingPool:
+ForkJoinPool:
+
+
+总结：
+1.Executor
+2.ExecutorService submit
+3.Callable = Runnable
+4.Executors
+5.ThreadPool
+6.Future
